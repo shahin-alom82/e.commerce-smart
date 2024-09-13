@@ -26,7 +26,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Toaster
-            position="top-right"
+            position="top-center"
             reverseOrder={false}
           />
         </LayOut>

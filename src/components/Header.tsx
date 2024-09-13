@@ -30,7 +30,7 @@ const Header = () => {
       }, [selector])
 
       return (
-            <div>
+            <div className="sticky top-0 z-50 bg-white">
                   {/* To Header Start */}
                   <div className='bg-green-700'>
                         <Container className='flex justify-between items-center py-1'>
@@ -55,6 +55,7 @@ const Header = () => {
                               </ul>
                         </Container>
                   </div>
+
                   {/* To Header End */}
 
                   <div className="px-4 lg:px-6">
