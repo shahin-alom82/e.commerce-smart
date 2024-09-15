@@ -1,4 +1,4 @@
-
+"use client"
 import Image from "next/image";
 import Container from "./Container";
 import { productCart } from "./Helper";
@@ -13,10 +13,10 @@ const Products = async () => {
       return (
             <Container className="mt-10">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {cart.map((item: any) => {
+                        {cart.map((item, index: any) => {
                               const discount = (Math.round(((item.oldPrice - item.price) / item.oldPrice) * 100).toFixed(2));
                               return (
-                                    <div key={item._id}>
+                                    <div key={index}>
                                           <div className="relative h-80 w-full overflow-hidden rounded-t-md">
                                                 <Link href={{ pathname: `/products/${item?._id}`, query: { _id: item?._id } }}>
                                                       <Image
