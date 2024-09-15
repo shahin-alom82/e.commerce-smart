@@ -60,10 +60,10 @@ const SingleProductPage = async ({ params }: any) => {
 
                                           {
                                                 //@ts-ignore
-                                                data.map((item: any) => (
+                                                data.map((item, index: any) => (
                                                       <div>
 
-                                                            <div className="bg-red-300 py-2 px-2 rounded" key={item?._id}>
+                                                            <div className="bg-red-300 py-2 px-2 rounded" key={index}>
                                                                   <Image className="w-96 h-64 rounded" src={item?.image} alt="image" height={200} width={200} />
                                                                   {/* <div className="px-2 py-4">
                                                                         <div>
