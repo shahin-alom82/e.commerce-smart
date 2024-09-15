@@ -1,4 +1,3 @@
-"use client"
 import Container from "@/components/Container";
 import { getTraningProducts, singleProduct } from "@/components/Helper";
 import PriceFormate from "@/constants/PriceFormate";
