@@ -16,7 +16,7 @@ export const shoppingSlice = createSlice({
                         (item) => item._id === action.payload._id
                   );
                   if (existingProduct) {
-                        toast.error('Product already added!');
+                        // toast.error('Product already added!');
                         // @ts-ignore
                         existingProduct.quantity += action.payload.quantity;
                   } else {
@@ -24,6 +24,10 @@ export const shoppingSlice = createSlice({
                         // @ts-ignore
                         state.productCart.push(action.payload);
                   }
+            },
+            cartDelete: (state, action) => {
+                  // @ts-ignore
+                  state.productCart = state.productCart.filter((item) => item._id !== action.payload)
             },
             addUser: (state, action) => {
                   state.userInfo = action.payload;
@@ -34,6 +38,6 @@ export const shoppingSlice = createSlice({
       },
 });
 
-export const { addToCart, addUser, removeUser } = shoppingSlice.actions;
+export const { addToCart, addUser, removeUser, cartDelete } = shoppingSlice.actions;
 
 export default shoppingSlice.reducer;

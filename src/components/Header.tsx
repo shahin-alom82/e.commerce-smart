@@ -11,6 +11,7 @@ import Link from "next/link";
 import Container from "./Container";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { useSelector } from "react-redux";
+import PriceFormate from "@/constants/PriceFormate";
 
 const Header = () => {
       const [clos, setClose] = useState("")
@@ -108,14 +109,16 @@ const Header = () => {
                                                 </div></>
                                     }
 
-                                    <div className="relative flex items-center gap-2 bg-black text-white px-2 lg:px-4 rounded-full cursor-pointer lg:h-10 lg:py-1">
-                                          <BsCartDash size={20} />
-                                          <span className="text-sm">${amount}</span>
-                                    </div>
+                                    <Link href={"/cart"}>
+                                          <div className="relative flex items-center gap-2 bg-black text-white px-2 lg:px-4 rounded-full cursor-pointer lg:h-10 lg:py-1">
+                                                <BsCartDash size={20} />
+                                                <span className="text-sm"><PriceFormate className="text-white" amount={amount} /></span>
+                                          </div>
 
-                                    <span className="absolute top-[140px]  lg:top-[47px] right-6 border text-xs border-green-500 bg-white text-green-500 px-[6px] py-[2px] rounded-full">
-                                          <p>{selector.length > 0 ? selector.length : "0"}</p>
-                                    </span>
+                                          <span className="absolute top-[140px]  lg:top-[47px] right-6 border text-xs border-green-500 bg-white text-green-500 px-[6px] py-[2px] rounded-full">
+                                                <p>{selector.length > 0 ? selector.length : "0"}</p>
+                                          </span>
+                                    </Link>
 
                               </div>
 

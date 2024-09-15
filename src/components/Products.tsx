@@ -19,7 +19,7 @@ const Products = async () => {
                               return (
                                     <div key={item._id}>
                                           <div className="relative h-80 w-full overflow-hidden rounded-t-md">
-                                                <Link href={{ pathname: "/product", query: { _id: item?._id } }}>
+                                                <Link href={{ pathname: `/products/${item?._id}`, query: { _id: item?._id } }}>
                                                       <Image
                                                             className="object-cover w-full h-full transform transition-transform duration-500 hover:scale-105"
                                                             src={item.image}

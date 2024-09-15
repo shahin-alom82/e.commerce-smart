@@ -65,10 +65,10 @@ const Banner = () => {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum <br /> voluptate consequuntur, odio facilis
                 </p>
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 hidden sm:flex mt-6">
-                  <button className="px-6 py-3 bg-slate-300 rounded-full hover:bg-white hover:text-black transition duration-300">
+                  <button className="px-6 py-3 bg-green-600  font-medium rounded-full hover:bg-white hover:text-black transition duration-300">
                     FIND OUT MORE
                   </button>
-                  <button className="px-6 py-3 bg-slate-300 rounded-full hover:text-black hover:bg-white transition duration-300">
+                  <button className="px-6 py-3 bg-green-600  font-medium  rounded-full hover:text-black hover:bg-white transition duration-300">
                     SHOP NOW
                   </button>
                 </div>
