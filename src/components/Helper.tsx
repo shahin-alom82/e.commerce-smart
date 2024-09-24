@@ -21,4 +21,3 @@ export const singleProduct = (_id: number) => {
       const item = productData.find((product) => product._id === _id)
       return item
 }
-

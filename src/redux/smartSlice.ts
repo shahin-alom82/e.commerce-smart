@@ -25,6 +25,25 @@ export const shoppingSlice = createSlice({
                         state.productCart.push(action.payload);
                   }
             },
+
+            increase: (state, action) => {
+                  // @ts-ignore
+                  const existingProduct = state.productCart.find((item) => item._id === action.payload)
+                  if (existingProduct) {
+                        // @ts-ignore
+                        existingProduct.quantity += 1
+                  }
+            },
+
+            decrease: (state, action) => {
+                  // @ts-ignore
+                  const existingProduct = state.productCart.find((item) => item._id === action.payload)
+                  if (existingProduct) {
+                        //@ts-ignore
+                        existingProduct.quantity -= 1
+                  }
+            },
+
             cartDelete: (state, action) => {
                   // @ts-ignore
                   state.productCart = state.productCart.filter((item) => item._id !== action.payload)
@@ -38,6 +57,6 @@ export const shoppingSlice = createSlice({
       },
 });
 
-export const { addToCart, addUser, removeUser, cartDelete } = shoppingSlice.actions;
+export const { addToCart, addUser, removeUser, cartDelete, increase, decrease } = shoppingSlice.actions;
 
 export default shoppingSlice.reducer;

@@ -16,8 +16,9 @@ const Footer = () => {
                               <nav className="mb-4 md:mb-0">
                                     <h6 className="text-4xl font-medium mb-2 uppercase text-green-600">Smart</h6>
                                     <ul className="mt-4 space-y-2" >
-                                          <li><a href="#" className="link link-hover block mb-1">Dhanmondi, Dhaka, Bangladesh</a></li>
-                                          <li><a href="#" className="link link-hover block mb-1">+45657565676</a>
+                                          <li className="link link-hover block mb-1">Shahin Alom</li>
+                                          <li className="link link-hover block mb-1">Assim, Fulbaria, Mymensingh</li>
+                                          <li><a href="#" className="link link-hover block mb-1">01682247291</a>
                                           </li>
 
                                     </ul>
@@ -53,7 +54,7 @@ const Footer = () => {
                               </nav>
                         </footer>
 
-                 
+
                         <footer className="flex flex-wrap justify-between items-center py-4">
                               <div className="flex items-center gap-4">
                                     <span className="border border-gray-500 py-2 px-2 rounded hover:bg-orange-600 hover:border hover:border-orange-600 hover:text-white duration-300 cursor-pointer"><FaFacebookSquare size={20} /></span>

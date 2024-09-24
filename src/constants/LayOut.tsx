@@ -7,7 +7,7 @@ const LayOut = ({ children }: { children: React.ReactNode }) => {
 
             <SessionProvider>
                   <Provider store={store}>
-                        {children}
+                              {children}
                   </Provider>
             </SessionProvider>
 
