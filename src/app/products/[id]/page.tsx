@@ -7,13 +7,11 @@ import { IoIosStar } from "react-icons/io";
 
 
 
-const SingleProductPage = async ({ params }: any) => {
-
+const SingleProductPage = ({ params }: any) => {
       const _idString = (params.id)
       const _id = Number(_idString)
-      const product = await singleProduct(_id)
-
-      const data = await getTraningProducts()
+      const product = singleProduct(_id)
+      const data = getTraningProducts()
 
       return (
             <div className="mt-6">
