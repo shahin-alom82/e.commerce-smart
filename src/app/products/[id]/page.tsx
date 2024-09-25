@@ -38,7 +38,7 @@ const SingleProductPage = ({ params }: any) => {
                                                 ))}
                                           </div>
                                           <div className="flex items-center gap-10 mt-1">
-                                                <h1 className="line-through"><PriceFormate className="" amount={product?.oldPrice!} /></h1>
+                                                <h1 className="line-through">{product?.oldPrice}</h1>
                                                 <PriceFormate className="font-medium" amount={product?.price!} />
                                           </div>
 
