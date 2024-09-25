@@ -33,7 +33,7 @@ const SingleProductPage = async ({ params }: any) => {
                                           <h1 className="lg:text-3xl text-[16px] font-medium text-gray-700 tracking-wide">
                                                 {product?.title}
                                           </h1>
-                                          <h1 className="lg:text-2xl text-[16px] font-medium text-gray-700 tracking-wide lg:ml-auto">
+                                          <h1 className="lg:text-2xl text-[16px] font-medium text-gray-700 tracking-wide lg:ml-96">
                                                 ${product?.price}.00
                                           </h1>
                                     </div>
