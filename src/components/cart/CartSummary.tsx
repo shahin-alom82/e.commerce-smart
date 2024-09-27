@@ -20,7 +20,7 @@ const CartSummary = () => {
       return (
             <div>
                   <Container className="">
-                        <div className="border-2 border-orange-400 bg-yellow-100 px-4 py-2 sm:gap-6 h-48 lg:col-span-5 mt-4 lg:mt-0 text-2xl">
+                        <div className="border-2 border-gray-300 bg-yellow-100 px-4 py-2 sm:gap-6 h-48 lg:col-span-5 mt-4 lg:mt-0 text-2xl">
                               <h2 className="text-2xl font-medium text-gray-800">
                                     Order summary
                               </h2>

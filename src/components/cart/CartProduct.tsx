@@ -35,11 +35,11 @@ const CartProduct = ({ product }: any) => {
       };
 
       return (
-            <Container className="flex flex-col lg:flex-row md:flex gap-4 border-b-2 border-orange-400 relative">
+            <Container className="flex flex-col lg:flex-row md:flex gap-4 border-b-2 border-gray-300 relative">
                   {/* Product Image start */}
                   <div className="lg:flex flex items-center justify-center">
                         <Link className="" href={{ pathname: `/products/${product._id}`, query: { _id: product._id } }}>
-                              <Image className="lg:h-48 lg:w-48 w-full lg:border-r-2 lg:mt-0 mt-4 border-orange-400 cursor-pointer" src={product?.image} alt="cartImage" height={200} width={200} />
+                              <Image className="lg:h-48 lg:w-48 w-full lg:border-r-2 lg:mt-0 mt-4 border-gray-300 cursor-pointer" src={product?.image} alt="cartImage" height={200} width={200} />
                         </Link>
                   </div>
                   {/* Product Image end */}
@@ -58,7 +58,7 @@ const CartProduct = ({ product }: any) => {
 
                         <div className="mt-2 flex gap-4 items-center">
                               <div className="flex items-center">
-                                    <button className="bg-orange-400 text-white font-medium text-xs gap-3 px-2 py-[5px]" onClick={() => dispatch(addToCart(product))}>
+                                    <button className="bg-orange-400 text-white font-medium text-xs gap-3 px-2 py-[5px]" >
                                           <h1>Add To Cart</h1>
                                     </button>
                                     <span className="border-l border-white bg-orange-400 text-white py-[5.5px] px-2">
